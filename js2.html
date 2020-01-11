@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function changingStyle()
+        {
+            var element = document.getElementsByClassName("para");
+            for(var x=0;x<element.lenght;x++)
+            {
+                element[x].style.color="red"; 
+            }
+            
+            
+        }
+        </script>
+        <body>
+            <p class="para">this paragraph 1 </p>
+            <p>this paragraph 2</p>
+            <p class="para">this paragraph 3</p>
+            <p>this paragraph 4</p>
+            <p class="para">this paragraph 5</p>
+            <a class="para" href="a">this is anchor tag</a>
+            <br>
+            <button onclick="changingStyle();">click me!</button>
+        </body>
+        
+        
+
+    </head>
+</html>
+        

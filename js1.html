@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function fun1()
+        {
+            var x,y;
+x = document.getElementById("x");
+y = document.getElementById("y");
+if(x.checked==true)
+ alert("success:"+x.value);
+else if(y.checked==true)
+ alert("not matched:"+y.value);
+else
+alert("value not checked: ");
+        }
+        </script>
+    </head>
+    <body>
+        
+        <input  id="x" name="grp1"type="radio" value="male">male</input>
+        <br>
+        <input id="y" name="grp1"type="radio" id="female" >female</input>
+        <br>
+        <button onclick="fun1();">clickme</button>
+    </body>
+</html>

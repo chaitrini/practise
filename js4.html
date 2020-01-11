@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+    <head>
+        <title>mouseover image and mouseon image</title>
+        <script type="text/javascript">
+        function setnewImage()
+        {
+            document.getElementById("img1").src = "u.jpg";
+            //alert();
+
+        }
+        function setoldImage()
+        {
+            document.getElementById("img1").src = "chaitri.jpg";
+            
+
+        }
+        </script>
+         </head>
+        <body>
+            <img  id= "img1" onmouseover= "setnewImage()" onmouseout= "setoldImage()" src= "chaitri.jpg" width= "300"/>
+
+        </body>
+   
+</html>

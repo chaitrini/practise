@@ -1,0 +1,26 @@
+<html>
+<head>
+    <script type="text/javascript">
+    var ID=0;
+    var seconds =0;
+    function printMsg()
+    {
+        document.getElementById("op").innerHTML=seconds+" seconds";
+        seconds++;
+    }
+    function start()
+    {
+       ID=window.setInterval(printMsg,1000);
+    }
+    function stop()
+    {
+        window.clearInterval(ID);
+    }
+    </script>
+</head>
+<body>
+<button onclick = "start()" id ="btnAdd">start</button>
+<h2 id ="op">some text</h2>
+<button onclick ="stop()" id ="btnStop">stop</button>
+</body>
+</html>

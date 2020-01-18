@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function validate()
+        {
+            var text = document.getElementById("text1").value;
+            var regx = /^([a-zA-Z0-9\.]+)@([a-z]+)\.([a-z]+)\.([a-z]+)$/;
+            if(regx.test(text))
+            {
+                document.getElementById("lbltext").innerHTML ="valid";
+                document.getElementById("lbltext").style.visibility ="visible";
+                document.getElementById("lbltext").style.color ="green";
+                //alert("valid username");
+            }
+            else
+            {
+                //alert("invalid username");
+                document.getElementById("lbltext").innerHTML ="invalid";
+                document.getElementById("lbltext").style.visibility="visible";
+                document.getElementById("lbltext").style.color ="red";
+            }
+        }
+        
+        </script>
+        <body>
+            <form>
+                <input type ="text" id ="text1" placeholder ="email"><br>
+                <label id ="lbltext" style ="color :red;visibility: hidden;">invalid username</label><br>
+                <button onclick ="validate();" type ="button">submit</button>
+            </form>
+        </body>
+    </head>
+</html>
